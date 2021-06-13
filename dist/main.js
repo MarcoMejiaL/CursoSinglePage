@@ -37,7 +37,62 @@ eval("module.exports = __webpack_require__(/*! regenerator-runtime */ \"./node_m
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ \"./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js\");\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/regenerator */ \"./node_modules/@babel/runtime/regenerator/index.js\");\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__);\n\n\nvar API = 'https://randomuser.me/api/';\n\nvar getData = /*#__PURE__*/function () {\n  var _ref = (0,_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default().mark(function _callee(id) {\n    var apiURl, response, data;\n    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default().wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            apiURl = id ? \"\".concat(API).concat(id) : API;\n            _context.prev = 1;\n            _context.next = 4;\n            return fetch(apiURl);\n\n          case 4:\n            response = _context.sent;\n            _context.next = 7;\n            return response.json();\n\n          case 7:\n            data = _context.sent;\n            return _context.abrupt(\"return\", data.results[0]);\n\n          case 11:\n            _context.prev = 11;\n            _context.t0 = _context[\"catch\"](1);\n            console.log('Fetch Error', _context.t0);\n\n          case 14:\n            ;\n\n          case 15:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee, null, [[1, 11]]);\n  }));\n\n  return function getData(_x) {\n    return _ref.apply(this, arguments);\n  };\n}();\n\n//# sourceURL=webpack://intento/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./routes */ \"./src/routes/index.js\");\n\nwindow.addEventListener('load', _routes__WEBPACK_IMPORTED_MODULE_0__.default);\n\n//# sourceURL=webpack://intento/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/pages/Character.js":
+/*!********************************!*\
+  !*** ./src/pages/Character.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar Character = function Character() {\n  var view = \"\\n        <div class=\\\"Character-iner\\\">\\n            <article class=\\\"Character-card\\\">\\n                <img src=\\\"image\\\" alt=\\\"name\\\">\\n                <h2>Name</h2>\\n            </article>\\n            <article class=\\\"Character-card\\\">\\n                <h3>Episodios:</h3>\\n                <h3>Status:</h3>\\n                <h3>Especie:</h3>\\n                <h3>Genero:</h3>\\n                <h3>Origin:</h3>\\n                <h3>Last Location:</h3>\\n\\n\\n            </article>\\n\\n        </div>\\n    \";\n  return view;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Character);\n\n//# sourceURL=webpack://intento/./src/pages/Character.js?");
+
+/***/ }),
+
+/***/ "./src/pages/Error404.js":
+/*!*******************************!*\
+  !*** ./src/pages/Error404.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar Error404 = function Error404() {\n  var view = \"\\n        <div class=\\\"Error404\\\">\\n            <h2>Error 404</h2>\\n        </div>\\n    \";\n  return view;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Error404);\n\n//# sourceURL=webpack://intento/./src/pages/Error404.js?");
+
+/***/ }),
+
+/***/ "./src/pages/Home.js":
+/*!***************************!*\
+  !*** ./src/pages/Home.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar Home = function Home() {\n  var view = \"\\n    <div class=\\\"Characters\\\">\\n    \\n        <article class=\\\"Character-item\\\"> \\n            <a href=\\\"#/1/\\\"> \\n                <img src=\\\"image\\\" alt=\\\"name\\\">\\n                <h2>Name </h2>\\n            </a>\\n        \\n        </article>\\n    \\n    \\n    </div>\\n    \";\n  return view;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);\n\n//# sourceURL=webpack://intento/./src/pages/Home.js?");
+
+/***/ }),
+
+/***/ "./src/routes/index.js":
+/*!*****************************!*\
+  !*** ./src/routes/index.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ \"./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js\");\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/regenerator */ \"./node_modules/@babel/runtime/regenerator/index.js\");\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _template_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../template/Header */ \"./src/template/Header.js\");\n/* harmony import */ var _pages_Home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../pages/Home */ \"./src/pages/Home.js\");\n/* harmony import */ var _pages_Character__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../pages/Character */ \"./src/pages/Character.js\");\n/* harmony import */ var _pages_Error404__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../pages/Error404 */ \"./src/pages/Error404.js\");\n\n\n\n\n\n\nvar routes = {\n  '/': _pages_Home__WEBPACK_IMPORTED_MODULE_3__.default,\n  '/..id': _pages_Character__WEBPACK_IMPORTED_MODULE_4__.default,\n  '/contact': 'Contact'\n};\n\nvar router = /*#__PURE__*/function () {\n  var _ref = (0,_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__.default)( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default().mark(function _callee() {\n    var header, content;\n    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default().wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            header =  false || document.getElementById('header');\n            content =  false || document.getElementById('content');\n            _context.next = 4;\n            return (0,_template_Header__WEBPACK_IMPORTED_MODULE_2__.default)();\n\n          case 4:\n            header.innerHTML = _context.sent;\n\n          case 5:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee);\n  }));\n\n  return function router() {\n    return _ref.apply(this, arguments);\n  };\n}();\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (router);\n\n//# sourceURL=webpack://intento/./src/routes/index.js?");
+
+/***/ }),
+
+/***/ "./src/template/Header.js":
+/*!********************************!*\
+  !*** ./src/template/Header.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar Header = function Header() {\n  var view = \"\\n        <div class=\\\"Header-main\\\">\\n            <div class=\\\"Header-logo\\\">\\n               <h1>\\n                   <a href=\\\"/\\\">\\n                    100tifi.co\\n                    </a>\\n               </h1>     \\n\\n            </div>\\n            <div class=\\\"Header-nav\\\">\\n                <a href=\\\"#/abaut/\\\">\\n                    Abaut\\n                </a>\\n            </div>\\n\\n\\n        </div>\\n    \\n    \\n    \\n    \";\n  return view;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);\n\n//# sourceURL=webpack://intento/./src/template/Header.js?");
 
 /***/ }),
 
