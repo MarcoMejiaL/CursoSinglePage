@@ -10,8 +10,8 @@ const Header = ()=>{
 
             </div>
             <div class="Header-nav">
-                <a href="#/abaut/">
-                    Abaut
+                <a href="#/about/">
+                    About
                 </a>
             </div>
 
